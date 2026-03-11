@@ -6,11 +6,10 @@ import styles from './styles.module.css';
 function NoteList({ todos = [] }) {
   return (
     <div className={styles.noteList}>
-      {todos.map((todo, indx) => {
+      {todos.map((todo) => {
         return (
-          <div key={indx}>
-            {' '}
-            <NoteItem title={todo.title} text={todo.text} />;
+          <div key={todo.id}>
+            <NoteItem title={todo.title} text={todo.text} id={todo.id} />
           </div>
         );
       })}

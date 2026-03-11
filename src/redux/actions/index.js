@@ -4,3 +4,17 @@ export const addNote = (data) => {
     payload: data,
   };
 };
+
+export const editNote = (data) => {
+  return {
+    type: 'EDIT_NOTE',
+    payload: data,
+  };
+};
+
+export const deleteNote = (data) => {
+  return {
+    type: 'DELETE_NOTE',
+    payload: data,
+  };
+};

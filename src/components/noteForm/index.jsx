@@ -12,6 +12,7 @@ function NoteForm({ dispatch }) {
 
   const addNewNote = (data) => {
     const note = {
+      id: `${data.title}_${data.text}3928934`,
       title: data.title,
       text: data.text,
     };
